@@ -8,7 +8,6 @@ all: $(NAME)
 
 $(NAME): $(OBJS)
 	@$(CC) $(CFLAGS) -o $(NAME) $(OBJS)
-	@echo "BraiiiiiiinnnzzzZ 🧟"
 
 %.o: %.cpp Zombie.hpp
 	@$(CC) $(CFLAGS) -c $< -o $@
