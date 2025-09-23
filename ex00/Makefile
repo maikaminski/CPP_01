@@ -9,7 +9,7 @@ all: $(NAME)
 $(NAME): $(OBJS)
 	@$(CC) $(CFLAGS) -o $(NAME) $(OBJS)
 
-%.o: %.cpp Zombie.hpp
+%.o: %.cpp 
 	@$(CC) $(CFLAGS) -c $< -o $@
 	@echo "Compiling $<..."
 
